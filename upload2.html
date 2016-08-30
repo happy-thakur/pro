@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>upload</title>
+
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <style type="text/css">
+    	div.main_upload{
+    		width: 700px;
+    		margin: auto;
+    		margin-top: 7 0px;
+    	}
+    	h5.upload_heading{
+		    font-size: 30px;
+		    padding: 4px;
+		    color: #4cafa7;
+		    margin-left: 10px;
+		    padding-top: 16px;
+		    border-bottom: 1px solid;
+		    display: inline-block;
+		    font-weight: 500;
+		    margin-bottom: 45px;
+    	}
+    	h6.sub_heading_upload{
+    		color: #4cafa7;
+		    font-size: 20px;
+		    margin-left: 15px;
+		    border-bottom: 1px solid;
+		    display: inline-block;
+		    margin-bottom: 35px;
+    	}
+    	div.sub_div_upload{
+    		margin-left: 25px;
+    	}
+    	 button#login_button{
+            /* float: right; */
+		    margin: 35px 20px;
+		    margin-top: 40px;
+		    margin-left: 75%;
+          }
+    </style>
+
+
+</head>
+<body>
+	<div class="main_upload">
+		<div class="card">
+
+			<form method="POST" action="upload.php">
+
+				<div class="sub_div_upload">
+					<h5 class="upload_heading">Upload</h5>
+
+					<div class="row">
+				   	<div class="input-field col s12">
+			   		<i class="material-icons prefix">mode_edit</i>
+		          <input id="last_name" type="text" class="validate" name="title">
+		          <label for="last_name">Title of your upload..</label>
+		        </div>
+			    </div>
+					<div class="row">
+			    	<div class="row">
+			        <div class="input-field col s12">
+			          <i class="material-icons prefix">mode_edit</i>
+			          <textarea id="icon_prefix2" class="materialize-textarea" name="description"></textarea>
+			          <label for="icon_prefix2">Description</label>
+			        </div>
+			      </div>
+					</div>
+				</div>
+
+				<h6 class="sub_heading_upload">Categorize..</h6>
+
+				<div class="sub_div_upload">
+					<div class="row">
+					  <div class="input-field col s6">
+					  <i class="material-icons prefix">mode_edit</i>
+					    <select name="type">
+					      <option value="" disabled selected>Choose your option</option>
+					      <option value="video">Photo</option>
+					      <option value="video">Video</option>
+					      <option value="audio">Audio</option>
+					      <option value="other">Other</option>
+					    </select>
+					    <label>Select Type</label>
+  					</div>
+						<div class="input-field col s6">
+					  	<i class="material-icons prefix">mode_edit</i>
+					    <select name="category">
+					      <option value="" disabled selected>Choose Category of upload</option>
+					      <option value="video">Technocal</option>
+					      <option value="video">Song</option>
+					      <option value="audio">Dance</option>
+					      <option value="other">Other</option>
+					    </select>
+					    <label>Select Category</label>
+					  </div>
+		    	</div>
+
+					<div class="row">
+    					<div class="input-field col s6">
+				    	<i class="material-icons prefix">mode_edit</i>
+				          <input id="last_name" type="text" class="validate" name="subcategory">
+				          <label for="last_name">Subcatory(Eg. Dance Type)</label>
+			        </div>
+					</div>
+
+			    <div class="row">
+			   		<div class="input-field col s12">
+				   		<i class="material-icons prefix">mode_edit</i>
+		          <input id="last_name" type="text" class="validate" name="contributers">
+		          <label for="last_name">Contributers.. (if any)</label>
+		        </div>
+			    </div>
+
+			    <div class="file-field input-field" style="width: 70%;">
+			      <div class="btn">
+			        <span>File</span>
+			        <input type="file" name="file_url">
+			      </div>
+			      <div class="file-path-wrapper">
+			        <input class="file-path validate" type="text">
+			      </div>
+			    </div>
+		    	<button onclick="submit" class="waves-effect waves-light btn" id="login_button" style="opacity: 1" name="submit_but" value="Save">Upload</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+		<script type="text/javascript">
+
+		  $(document).ready(function() {
+		    $('select').material_select();
+		  });
+
+    </script>
+
+
+</body>
+</html>

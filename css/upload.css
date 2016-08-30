@@ -1,0 +1,115 @@
+div.main_outer_upload_div{
+background: rgba(0,0,0,0.7);
+height: 100%;
+width: 100%;
+padding: 0px;
+margin: 0px;
+position: fixed;;;
+top: 0px;
+left: 0px;
+z-index: 15;
+display: none;
+}
+div.main_inner_upload_div{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+div.main_inner_upload_div::-webkit-scrollbar {
+ width: 10px;
+}
+div.main_upload{
+  width: 700px;
+  margin: auto;
+  margin-top: 70px;
+}
+h5.upload_heading{
+  font-size: 30px;
+  padding: 4px;
+  color: #4cafa7;
+  margin-left: 10px;
+  padding-top: 16px;
+  border-bottom: 1px solid;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+h6.sub_heading_upload{
+  color: #4cafa7;
+  font-size: 20px;
+  margin-left: 15px;
+  border-bottom: 1px solid;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+div.sub_div_upload{
+  margin-left: 25px;
+}
+ button#login_button{
+      /* float: right; */
+  margin: 35px 20px;
+  margin-top: 40px;
+  margin-left: 75%;
+    }
+    div.add_other_type{
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      background: rgba(0,0,0,0.7);
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 15;
+    }
+    div.inner_add_other_type{
+      margin: auto;
+      width: 50%;
+      background: white;
+      height: 290px;
+      border-radius: 5px;
+      margin-top: 13%;
+      z-index: 16;
+    }
+    h4.add_heading{
+      padding: 5px;
+      font-size: 22px;
+      margin: 25px;
+      padding-top: 20px;
+      border-bottom: 1px solid;
+      display: inline-block;
+    }
+    span.add_done{
+      background: cornflowerblue;
+      height: 60px;
+      width: 60px;
+      border-radius: 46px;
+      color: white;
+      /*border: 1px solid black;*/
+      /*position: absolute;
+      top: 20px;
+      left: 10px;*/
+      float: right;
+      padding: 0px;
+      cursor: pointer;
+      margin-right: 20px;
+      margin-top: 00px;
+      border: 1px solid white;
+
+    }
+    span.add_done:hover{
+      background: white;
+      color: cornflowerblue;
+      border: 1px solid cornflowerblue;
+    }
+    div.add_other_type{
+      display: none;
+    }
+    select{
+      border: 1px solid;
+      padding: 10px;
+      border-radius: 5px;
+    }

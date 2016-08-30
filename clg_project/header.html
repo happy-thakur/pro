@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>header</title>
+
+	<!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          
+</head>
+<body>
+
+	  <nav>
+	    <div class="nav-wrapper" style="background: cornflowerblue;">
+	      <a href="#!" class="brand-logo"><img src="img.png" style="height: 55px; width: 160px; border-radius: 10px; margin-top: 4px; margin-left: 7px;"/></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="sass.html"><i class="material-icons">home</i></a></li>
+	        <li><a href="badges.html"><i class="material-icons">notifications</i></a></li>
+	        <li><a href="collapsible.html"><i class="material-icons">search</i></a></li>
+	        <li><a href="#" data-activates="slide-out" class="my-collapse"><i class="material-icons">view_headline</i></a></li>
+	      </ul>
+	    </div>
+	  </nav>
+
+	   <ul id="slide-out" class="side-nav">
+		    <li><div class="userView">
+		      <img class="background" src="images/office.jpg">
+		      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+		      <a href="#!name"><span class="white-text name">John Doe</span></a>
+		      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+		    </div></li>
+		    <li> 
+		    	<ul class="collection">
+				    <li class="collection-item avatar">
+				      <img src="images/yuna.jpg" alt="" class="circle">
+				      <span class="title">Title</span>
+				      <p>First Line <br>
+				         Second Line
+				      </p>
+				      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				    </li>
+				    <li class="collection-item avatar">
+				      <i class="material-icons circle">folder</i>
+				      <span class="title">Title</span>
+				      <p>First Line <br>
+				         Second Line
+				      </p>
+				      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				    </li>
+				    <li class="collection-item avatar">
+				      <i class="material-icons circle green">insert_chart</i>
+				      <span class="title">Title</span>
+				      <p>First Line <br>
+				         Second Line
+				      </p>
+				      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				    </li>
+				    <li class="collection-item avatar">
+				      <i class="material-icons circle red">play_arrow</i>
+				      <span class="title">Title</span>
+				      <p>First Line <br>
+				         Second Line
+				      </p>
+				      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				    </li>
+				  </ul>
+			</li>
+		    
+		</ul>
+		<!-- <a href="#" data-activates="slide-out" class="my-collapse"><i class="material-icons">menu</i></a> -->
+        
+
+
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+     <script type="text/javascript">
+  	
+	   $('.my-collapse').sideNav({
+	      menuWidth: 300, // Default is 240
+	      edge: 'left', // Choose the horizontal origin
+	      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	    }
+	  );
+     
+     // Initialize collapse button
+	  $(".my-collapse").sideNav();
+		  
+        
+  </script>
+
+
+
+</body>
+</html>

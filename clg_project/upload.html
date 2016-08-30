@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload</title>
+	<!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+	  <style type="text/css">
+	  	div.card{
+	  		padding: 10px;
+	  		/*display: inline-block;*/
+	  	}
+	  	div#sub_field_upload{
+	  		display: inline;
+	  	}
+	  </style>
+
+	  <script type="text/javascript">
+	  	$(document).ready(function() {
+    $('select').material_select();
+  });
+
+	  </script>
+</head>
+<body>
+	<div class="main_upload_box">
+		<div class="card">
+			<h5 class="upload_heading">Upload</h5>
+				<div class="inner_upload">
+				<div class="input-field col s6" id="sub_field_upload">
+				    <select>
+				      <option value="" disabled selected>Select Type</option>
+				      <option value="3">Photo</option>
+				      <option value="1">Audio</option>
+				      <option value="2">Video</option>
+				      <option value="3">Pdf</option>
+				      <option value="3">Text</option>
+				      <option value="3">Other</option>
+				    </select>
+				    <label>Type of Upload</label>
+				</div>
+
+				<div class="input-field col s6" id="sub_field_upload">
+				    <select>
+				      <option value="" disabled selected>Select Category</option>
+				      <option value="3">Technical</option>
+				      <option value="1">Artistic</option>
+				      <option value="2">Poetry</option>
+				      <option value="3">Articals</option>
+				      
+				    </select>
+				    <label>Category</label>
+				</div>
+
+
+				<div class="input-field col s6" id="sub_field_upload">
+				<h6 class="sub_category">Sub Category</h6>
+					<p>
+				      <input name="group1" type="radio" id="test1" />
+				      <label for="test1">cat 1</label>
+				    </p>
+				    <p>
+				      <input name="group1" type="radio" id="test2" />
+				      <label for="test2">cat 2</label>
+				    </p>
+				    <p>
+				      <input class="with-gap" name="group1" type="radio" id="test3"  />
+				      <label for="test3">cat 3</label>
+				    </p>
+				      <p>
+				        <input name="group1" type="radio" id="test4" disabled="disabled" />
+				        <label for="test4">cat 4</label>
+				    </p>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="main_upload_show">
+		<div class="inner_upload_show">
+			<div class="card">
+				<h5 class="total_uploads">
+					Total Uploads
+				</h5>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

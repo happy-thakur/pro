@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav.navigation{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+div.nav-wrapper{
+    background: cornflowerblue;
+    /*position: fixed;*/
+}
+h1{
+    font-size: 50px;
+    padding: 10px;
+    margin: 50px 20px;
+    display: inline-block;
+    border-bottom: 3px solid rgba(200,200,200,0.5);
+    margin-top: 20px;
+}
+div#main_login{
+    width: 700px;
+    margin-top: 6%;
+    margin-left: 35%;
+}
+div.main_log_in_back{
+    display: none;
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    /*padding: 20px;*/
+    /*padding-bottom: 30px;*/
+}
+i#close_icon{
+    float: right;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+button#login_button{
+    margin: 20px;
+    float: right;
+    /*font-size: 20px;*/
+}
+/*coading for styling like list*/
+
+div.like_list{
+  width: 100px;
+  height: 250px;
+
+}
+div.like_list span{
+  border: 1px solid black;
+  padding: 2px;
+}
+
+/*coading for like list ends  */
